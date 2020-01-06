@@ -1,7 +1,6 @@
 #include <vector>
 #include <string>
 #include <assert.h>
-#include <unordered_set>
 #include <algorithm>
 using namespace std;
 class Solution {
@@ -50,23 +49,17 @@ public:
         int maxLength = 1;
         int startIndex = 0;
         int currentLength = 1;
-        unordered_set<char> set = {s[0]};
         for (int i=1;i<size;i++) {
-            auto pfind = set.find(s[i]);
-            if (pfind == set.end()) {
-                set.insert(s[i]);
+            int findIndex = find(s, startIndex, currentLength, s[i]);
+            if (findIndex < 0) {
                 currentLength ++;
                 maxLength = MAX(currentLength, maxLength);
             } else {
-                int findIndex = find(s, startIndex, currentLength, s[i]);
-                for (int j=startIndex;j<findIndex;j++) 
-                    set.erase(set.find(s[j]));
                 currentLength = i - findIndex;
                 startIndex = findIndex + 1;
             }
 
         }
-
 
         return maxLength;
     }
