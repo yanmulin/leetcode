@@ -21,18 +21,22 @@ public:
     vector<string> letterCombinations(string digits) {
         int size = digits.size();
         if (size == 0) return {};
-        vector<string> p = mapping(digits[0]);
-        vector<string> rp = p;
-        for (int i=1;i<size;i++) {
-            p.clear();
-            vector<string> v = mapping(digits[i]);
-            int psz = rp.size(), vsz = v.size();
-            for (int j=0;j<psz;j++) {
-                for (int k=0;k<vsz;k++) 
-                    p.push_back(rp[j] + v[k]);
+        vector<vector<string>> p;
+        for (int i=size-1;i>=0;i--) p.push_back(mapping(digits[i]));
+        while (p.size() > 1) {
+            vector<string> v, v1, v2;
+            v1 = p.back();
+            p.pop_back();
+            v2 = p.back();
+            p.pop_back();
+            int v1sz = v1.size(), v2sz = v2.size();
+            for (int j=0;j<v1sz;j++) {
+                for (int k=0;k<v2sz;k++) {
+                    v.push_back(v1[j] + v2[k]);
+                }
             }
-            rp = p;
+            p.push_back(v);
         }
-        return p;
+        return p.back();
     }
 };
