@@ -10,19 +10,18 @@ public:
                                     "pqrs", "tuv", "wxyz"};
         int size = digits.size();
         if (size == 0) return {};
-        vector<string> res;
+        vector<vector<string>> res = {{}, {}};
         string s = mapping[digits[0] - '2'];
         for (int k=0;k<s.size();k++)
-                res.push_back({s[k]});
+                res[0].push_back({s[k]});
         for (int i=1;i<size;i++) {
             string s = mapping[digits[i] - '2'];
-            vector<string> copy = res;
-            res.clear();
-            for (int j=0;j<copy.size();j++) {
+            res[i%2].clear();
+            for (int j=0;j<res[(i-1)%2].size();j++) {
                 for (int k=0;k<s.size();k++)
-                    res.push_back(copy[j] + s[k]);
+                    res[i%2].push_back(res[(i-1)%2][j] + s[k]);
             }
         }
-        return res;
+        return res[(size-1)%2];
     }
 };
