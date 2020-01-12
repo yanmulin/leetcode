@@ -17,8 +17,9 @@ public:
         if (equal(x, 0.0)) return 0;
         if (equal(x, 1.0)) return 1.0;
         if (equal(x, -1.0)) return n % 2 == 1 ? -1.0 : 1.0;
-        long long ln = n;
-        unsigned exp = ABS(ln);
+        unsigned exp;
+        if (n < 0) exp = -(long long)n;
+        else exp = n;
         double res = helper(x, exp);
         return n > 0 ? res : (1.0 / res);
     }
