@@ -12,23 +12,13 @@ private:
     void restoreIpAddressRecurse(const string &s, int start, int level, const string &solution, vector<string> &results) {
         if (level > 4) return;
         if (start >= s.size() && level == 4) {
-<<<<<<< HEAD
             results.push_back(solution.substr(0, solution.size() - 1));
-=======
-            results.push_back(solution);
->>>>>>> 957289f08bbbafff0f3569f15df9b3be3737a655
             return;
         }
         for (int i=1;i<=3 && start+i<=s.size();i++) {
             string sub = s.substr(start, i);
             if (!isValid(sub)) continue;
-<<<<<<< HEAD
             restoreIpAddressRecurse(s, start+i, level+1, solution + sub + '.', results);
-=======
-            if (solution.empty())
-                restoreIpAddressRecurse(s, start+i, level+1, sub, results);
-            else restoreIpAddressRecurse(s, start+i, level+1, solution + '.' + sub, results);
->>>>>>> 957289f08bbbafff0f3569f15df9b3be3737a655
         }
     }
 public:
