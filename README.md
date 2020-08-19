@@ -78,3 +78,27 @@ LeetCode
 |69|Sqrt(x)|[cpp](https:/github.com/yanmulin/leetcode/69.sqrtx.cpp)|Easy|
 |70|Climbing Stairs|[cpp](https:/github.com/yanmulin/leetcode/70.climbing-stairs.cpp)|Easy|
 |71|Simplify Path|[cpp](https:/github.com/yanmulin/leetcode/71.simplify-path.cpp)|Medium|
+|72|Edit Distance|[cpp](https:/github.com/yanmulin/leetcode/72.edit-distance.cpp)|Hard|
+|73|Set Matrix Zeroes|[cpp](https:/github.com/yanmulin/leetcode/73.set-matrix-zeroes.cpp)|Medium|
+|74|Search a 2D Matrix|[cpp](https:/github.com/yanmulin/leetcode/74.search-a-2d-matrix.cpp)|Medium|
+|75|Sort Colors|[cpp](https:/github.com/yanmulin/leetcode/75.sort-colors.cpp)|Medium|
+|76|Minimum Window Substring|[cpp](https:/github.com/yanmulin/leetcode/76.minimum-window-substring.cpp)|Hard|
+|77|Combinations|[cpp](https:/github.com/yanmulin/leetcode/77.combinations.cpp)|Medium|
+|78|Subsets|[cpp](https:/github.com/yanmulin/leetcode/78.subsets.cpp)|Medium|
+|79|Word Search|[cpp](https:/github.com/yanmulin/leetcode/79.word-search.cpp)|Medium|
+|80|Remove Duplicates from Sorted Array II|[cpp](https:/github.com/yanmulin/leetcode/80.remove-duplicates-from-sorted-array-ii.cpp)|Medium|
+|81|Search in Rotated Sorted Array II|[cpp](https:/github.com/yanmulin/leetcode/81.search-in-rotated-sorted-array-ii.cpp)|Medium|
+|82|Remove Duplicates from Sorted List II|[cpp](https:/github.com/yanmulin/leetcode/82.remove-duplicates-from-sorted-list-ii.cpp)|Medium|
+|83|Remove Duplicates from Sorted List|[cpp](https:/github.com/yanmulin/leetcode/83.remove-duplicates-from-sorted-list.cpp)|Easy|
+|84|Largest Rectangle in Histogram|[cpp](https:/github.com/yanmulin/leetcode/84.largest-rectangle-in-histogram.cpp)|Hard|
+|85|Maximal Rectangle|[cpp](https:/github.com/yanmulin/leetcode/85.maximal-rectangle.cpp)|Hard|
+|86|Partition List|[cpp](https:/github.com/yanmulin/leetcode/86.partition-list.cpp)|Medium|
+|89|Gray Code|[cpp](https:/github.com/yanmulin/leetcode/89.gray-code.cpp)|Medium|
+|91|Decode Ways|[cpp](https:/github.com/yanmulin/leetcode/91.decode-ways.cpp)|Medium|
+|93|Restore IP Addresses|[cpp](https:/github.com/yanmulin/leetcode/93.restore-ip-addresses.cpp)|Medium|
+|94|Binary Tree Inorder Traversal|[cpp](https:/github.com/yanmulin/leetcode/94.binary-tree-inorder-traversal.cpp)|Medium|
+|95|Unique Binary Search Trees II|[cpp](https:/github.com/yanmulin/leetcode/95.unique-binary-search-trees-ii.cpp)|Medium|
+|97|Interleaving String|[cpp](https:/github.com/yanmulin/leetcode/97.interleaving-string.cpp)|Hard|
+|98|Validate Binary Search Tree|[cpp](https:/github.com/yanmulin/leetcode/98.validate-binary-search-tree.cpp)|Medium|
+|99|Recover Binary Search Tree|[cpp](https:/github.com/yanmulin/leetcode/99.recover-binary-search-tree.cpp)|Hard|
+|100|Same Tree|[cpp](https:/github.com/yanmulin/leetcode/100.same-tree.cpp)|Easy|
